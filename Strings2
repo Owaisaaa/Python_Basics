@@ -1,0 +1,61 @@
+#  Strings Tutorial
+
+# Accessing Characters:
+# You can access individual characters in a string using indexing, starting from 0.
+# Negative indices count from the end of the string.
+my_string = "Hello, World!"
+print(my_string[0])      # Output: 'H'
+print(my_string[-1])     # Output: '!'
+
+# Length of a String:
+# The len() function returns the length of a string,
+# which is the number of characters in the string.
+my_string = "Hello, World!"
+print(len(my_string))    # Output: 13
+
+# String Concatenation:
+# You can concatenate strings using the + operator or the += assignment operator.
+string1 = "Hello"
+string2 = "World"
+result = string1 + ", " + string2
+print(result)            # Output: "Hello, World"
+
+# String Slicing:
+# You can extract a substring from a string using slicing,
+# which allows you to specify a range of indices.
+my_string = "Hello, World!"
+print(my_string[7:12])   # Output: "World"
+print(my_string[:5])     # Output: "Hello"
+print(my_string[7:])     # Output: "World!"
+
+# String Methods:
+# Python provides many built-in methods for manipulating strings.
+# Here are some commonly used ones:
+my_string = "Hello, World!"
+print(my_string.lower())          # Output: "hello, world!"
+print(my_string.split(", "))      # Output: ['Hello', 'World!']
+print(my_string.replace("Hello", "Hi"))  # Output: "Hi, World!"
+print(my_string.startswith("Hello"))      # Output: True
+print(len(my_string))  # 11
+print(my_string.find("world"))  # 6
+print(my_string.upper())  # HELLO WORLD
+print(my_string.lower())  # hello world
+
+# Change a string into a list
+my_string = "MIT4Students"
+L = list(my_string)
+print(L)
+L[3] = '2'
+print(L)
+
+# Join with strings
+# " ".join() is used to join the elements of
+# a list of strings with space between them
+strings = ["hello", "world", "!"]
+new_string = " ".join(strings)
+print(new_string)
+
+for character in my_string:
+    print(character)
+
+
